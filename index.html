@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>2048 - Gioco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title-block">
+        <h1>2048</h1>
+        <p class="subtitle">Unisci i numeri e arriva a <strong>2048!</strong></p>
+      </div>
+      <div class="scores">
+        <div class="score-box">
+          <span class="score-label">PUNTEGGIO</span>
+          <span id="score" class="score-value">0</span>
+        </div>
+        <div class="score-box">
+          <span class="score-label">RECORD</span>
+          <span id="best" class="score-value">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="controls">
+      <p class="hint">Muoviti con le <strong>frecce</strong>, i tasti <strong>W A S D</strong>, lo <strong>swipe</strong> col dito o trascinando con il <strong>mouse</strong>.</p>
+      <button id="new-game" class="btn">Nuova partita</button>
+    </div>
+
+    <div class="board-wrapper">
+      <div id="grid-bg" class="grid-bg"></div>
+      <div id="tile-container" class="tile-container"></div>
+
+      <div id="game-message" class="game-message">
+        <p id="message-text"></p>
+        <button id="retry" class="btn">Riprova</button>
+      </div>
+    </div>
+
+    <footer>
+      <p><strong>Come si gioca:</strong> usa le frecce per muovere le tessere. Quando due tessere con lo stesso numero si toccano, si <strong>uniscono</strong> in una sola!</p>
+      <p class="credits">Autore: <strong>PiBOH</strong> &middot; Versione <strong>1.0.0d-opza</strong></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
